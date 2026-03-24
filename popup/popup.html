@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Redirector</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🔊 Audio Redirector</h1>
+    <p class="subtitle">Select audio output for this tab</p>
+
+    <div id="device-list-section">
+      <div id="loading" class="loading">Loading devices…</div>
+      <ul id="device-list" class="device-list hidden"></ul>
+      <p id="no-devices" class="hidden muted">No audio output devices found.</p>
+      <p id="error-msg" class="hidden error-text"></p>
+    </div>
+
+    <div id="status" class="status hidden"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
